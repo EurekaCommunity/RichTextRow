@@ -10,6 +10,11 @@
 		B62500DB1EBA157300F4D8D5 /* RichTextRow.h in Headers */ = {isa = PBXBuildFile; fileRef = B62500D91EBA157300F4D8D5 /* RichTextRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B625012C1EBA22D700F4D8D5 /* RichTextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B625012B1EBA22D700F4D8D5 /* RichTextRow.swift */; };
 		B625012D1EBA261300F4D8D5 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62501291EBA227C00F4D8D5 /* Eureka.framework */; };
+		B652AB2D1EBB657500BBEC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652AB2C1EBB657500BBEC43 /* AppDelegate.swift */; };
+		B652AB2F1EBB657500BBEC43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B652AB2E1EBB657500BBEC43 /* ViewController.swift */; };
+		B652AB321EBB657500BBEC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B652AB301EBB657500BBEC43 /* Main.storyboard */; };
+		B652AB341EBB657500BBEC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B652AB331EBB657500BBEC43 /* Assets.xcassets */; };
+		B652AB371EBB657500BBEC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B652AB351EBB657500BBEC43 /* LaunchScreen.storyboard */; };
 		B6CF20DD1EBB3AE900D66C72 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF20DC1EBB3AE900D66C72 /* RichTextEditor.swift */; };
 		B6CF20E01EBB3B7200D66C72 /* RichTextEditor.html in Resources */ = {isa = PBXBuildFile; fileRef = B6CF20DE1EBB3B7200D66C72 /* RichTextEditor.html */; };
 		B6CF20E11EBB3B7200D66C72 /* RichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = B6CF20DF1EBB3B7200D66C72 /* RichTextEditor.js */; };
@@ -33,6 +38,13 @@
 		B62500D91EBA157300F4D8D5 /* RichTextRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RichTextRow.h; sourceTree = "<group>"; };
 		B62501291EBA227C00F4D8D5 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../../../Library/Developer/Xcode/DerivedData/RichTextRow-cnubuwgrfzwnnchjqosunspkzeve/Build/Products/Debug-iphoneos/Eureka.framework"; sourceTree = "<group>"; };
 		B625012B1EBA22D700F4D8D5 /* RichTextRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RichTextRow.swift; sourceTree = "<group>"; };
+		B652AB2A1EBB657500BBEC43 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B652AB2C1EBB657500BBEC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B652AB2E1EBB657500BBEC43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B652AB311EBB657500BBEC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B652AB331EBB657500BBEC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B652AB361EBB657500BBEC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B652AB381EBB657500BBEC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6CF20DC1EBB3AE900D66C72 /* RichTextEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
 		B6CF20DE1EBB3B7200D66C72 /* RichTextEditor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RichTextEditor.html; sourceTree = "<group>"; };
 		B6CF20DF1EBB3B7200D66C72 /* RichTextEditor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RichTextEditor.js; sourceTree = "<group>"; };
@@ -47,6 +59,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B625012D1EBA261300F4D8D5 /* Eureka.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B652AB271EBB657500BBEC43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +85,7 @@
 			children = (
 				B62500C81EBA150300F4D8D5 /* Sources */,
 				B6CF21221EBB5F0C00D66C72 /* RichTextRowTests */,
+				B652AB2B1EBB657500BBEC43 /* Example */,
 				B62500B31EBA143F00F4D8D5 /* Products */,
 				B62501281EBA227C00F4D8D5 /* Frameworks */,
 			);
@@ -76,6 +96,7 @@
 			children = (
 				B62500D01EBA154A00F4D8D5 /* RichTextRow.framework */,
 				B6CF21211EBB5F0C00D66C72 /* RichTextRowTests.xctest */,
+				B652AB2A1EBB657500BBEC43 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +120,19 @@
 				B62501291EBA227C00F4D8D5 /* Eureka.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B652AB2B1EBB657500BBEC43 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				B652AB2C1EBB657500BBEC43 /* AppDelegate.swift */,
+				B652AB2E1EBB657500BBEC43 /* ViewController.swift */,
+				B652AB301EBB657500BBEC43 /* Main.storyboard */,
+				B652AB331EBB657500BBEC43 /* Assets.xcassets */,
+				B652AB351EBB657500BBEC43 /* LaunchScreen.storyboard */,
+				B652AB381EBB657500BBEC43 /* Info.plist */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 		B6CF21221EBB5F0C00D66C72 /* RichTextRowTests */ = {
@@ -142,6 +176,23 @@
 			productReference = B62500D01EBA154A00F4D8D5 /* RichTextRow.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B652AB291EBB657500BBEC43 /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B652AB3B1EBB657500BBEC43 /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				B652AB261EBB657500BBEC43 /* Sources */,
+				B652AB271EBB657500BBEC43 /* Frameworks */,
+				B652AB281EBB657500BBEC43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = B652AB2A1EBB657500BBEC43 /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B6CF21201EBB5F0C00D66C72 /* RichTextRowTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6CF21291EBB5F0C00D66C72 /* Build configuration list for PBXNativeTarget "RichTextRowTests" */;
@@ -175,6 +226,10 @@
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
+					B652AB291EBB657500BBEC43 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 					B6CF21201EBB5F0C00D66C72 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -196,6 +251,7 @@
 			targets = (
 				B62500CF1EBA154A00F4D8D5 /* RichTextRow */,
 				B6CF21201EBB5F0C00D66C72 /* RichTextRowTests */,
+				B652AB291EBB657500BBEC43 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +263,16 @@
 			files = (
 				B6CF20E11EBB3B7200D66C72 /* RichTextEditor.js in Resources */,
 				B6CF20E01EBB3B7200D66C72 /* RichTextEditor.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B652AB281EBB657500BBEC43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B652AB371EBB657500BBEC43 /* LaunchScreen.storyboard in Resources */,
+				B652AB341EBB657500BBEC43 /* Assets.xcassets in Resources */,
+				B652AB321EBB657500BBEC43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +295,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B652AB261EBB657500BBEC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B652AB2F1EBB657500BBEC43 /* ViewController.swift in Sources */,
+				B652AB2D1EBB657500BBEC43 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B6CF211D1EBB5F0C00D66C72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +321,25 @@
 			targetProxy = B6CF21271EBB5F0C00D66C72 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B652AB301EBB657500BBEC43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B652AB311EBB657500BBEC43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B652AB351EBB657500BBEC43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B652AB361EBB657500BBEC43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B62500C21EBA143F00F4D8D5 /* Debug */ = {
@@ -396,6 +490,30 @@
 			};
 			name = Release;
 		};
+		B652AB391EBB657500BBEC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hubspot.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B652AB3A1EBB657500BBEC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hubspot.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		B6CF212A1EBB5F0C00D66C72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -439,6 +557,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B652AB3B1EBB657500BBEC43 /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B652AB391EBB657500BBEC43 /* Debug */,
+				B652AB3A1EBB657500BBEC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B6CF21291EBB5F0C00D66C72 /* Build configuration list for PBXNativeTarget "RichTextRowTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -446,6 +572,7 @@
 				B6CF212B1EBB5F0C00D66C72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
