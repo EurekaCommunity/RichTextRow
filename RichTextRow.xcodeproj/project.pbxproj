@@ -15,9 +15,8 @@
 		B652AB321EBB657500BBEC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B652AB301EBB657500BBEC43 /* Main.storyboard */; };
 		B652AB341EBB657500BBEC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B652AB331EBB657500BBEC43 /* Assets.xcassets */; };
 		B652AB371EBB657500BBEC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B652AB351EBB657500BBEC43 /* LaunchScreen.storyboard */; };
+		B6894C351EC1FCA800007BB1 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6894C341EC1FCA800007BB1 /* Resources.bundle */; };
 		B6CF20DD1EBB3AE900D66C72 /* RichTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF20DC1EBB3AE900D66C72 /* RichTextEditor.swift */; };
-		B6CF20E01EBB3B7200D66C72 /* RichTextEditor.html in Resources */ = {isa = PBXBuildFile; fileRef = B6CF20DE1EBB3B7200D66C72 /* RichTextEditor.html */; };
-		B6CF20E11EBB3B7200D66C72 /* RichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = B6CF20DF1EBB3B7200D66C72 /* RichTextEditor.js */; };
 		B6CF21241EBB5F0C00D66C72 /* RichTextRowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CF21231EBB5F0C00D66C72 /* RichTextRowTests.swift */; };
 		B6CF21261EBB5F0C00D66C72 /* RichTextRow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62500D01EBA154A00F4D8D5 /* RichTextRow.framework */; };
 /* End PBXBuildFile section */
@@ -45,9 +44,8 @@
 		B652AB331EBB657500BBEC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B652AB361EBB657500BBEC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B652AB381EBB657500BBEC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6894C341EC1FCA800007BB1 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 		B6CF20DC1EBB3AE900D66C72 /* RichTextEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RichTextEditor.swift; sourceTree = "<group>"; };
-		B6CF20DE1EBB3B7200D66C72 /* RichTextEditor.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RichTextEditor.html; sourceTree = "<group>"; };
-		B6CF20DF1EBB3B7200D66C72 /* RichTextEditor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = RichTextEditor.js; sourceTree = "<group>"; };
 		B6CF21211EBB5F0C00D66C72 /* RichTextRowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RichTextRowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CF21231EBB5F0C00D66C72 /* RichTextRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichTextRowTests.swift; sourceTree = "<group>"; };
 		B6CF21251EBB5F0C00D66C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,9 +105,8 @@
 				B62500D91EBA157300F4D8D5 /* RichTextRow.h */,
 				B625012B1EBA22D700F4D8D5 /* RichTextRow.swift */,
 				B6CF20DC1EBB3AE900D66C72 /* RichTextEditor.swift */,
-				B6CF20DE1EBB3B7200D66C72 /* RichTextEditor.html */,
-				B6CF20DF1EBB3B7200D66C72 /* RichTextEditor.js */,
 				B62500D81EBA157300F4D8D5 /* Info.plist */,
+				B6894C341EC1FCA800007BB1 /* Resources.bundle */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -261,8 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6CF20E11EBB3B7200D66C72 /* RichTextEditor.js in Resources */,
-				B6CF20E01EBB3B7200D66C72 /* RichTextEditor.html in Resources */,
+				B6894C351EC1FCA800007BB1 /* Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +560,7 @@
 				B652AB3A1EBB657500BBEC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6CF21291EBB5F0C00D66C72 /* Build configuration list for PBXNativeTarget "RichTextRowTests" */ = {
 			isa = XCConfigurationList;
