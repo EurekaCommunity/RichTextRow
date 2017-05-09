@@ -15,8 +15,8 @@ public protocol RichTextEditorDelegate: class {
 
 public class RichTextEditor: UIView, WKScriptMessageHandler, WKNavigationDelegate, UIScrollViewDelegate {
 
-    static let textDidChange = "textDidChange"
-    static let heightDidChange = "heightDidChange"
+    private static let textDidChange = "textDidChange"
+    private static let heightDidChange = "heightDidChange"
     private static let defaultHeight: CGFloat = 60
 
     public weak var delegate: RichTextEditorDelegate?
@@ -123,7 +123,6 @@ public class RichTextEditor: UIView, WKScriptMessageHandler, WKNavigationDelegat
         if let textToLoad = textToLoad {
             self.textToLoad = nil
             text = textToLoad
-            placeholderLabel.isHidden = !textToLoad.htmlToPlainText.isEmpty
         }
     }
 
