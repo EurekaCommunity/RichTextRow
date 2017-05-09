@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
   s.ios.source_files = 'Sources/**/*.{swift}'
-  s.resources = 'Sources/Resources.bundle'
+  s.ios.resource_bundle = { 'Resources' => 'Sources/**/*.{html,js}' }
   s.dependency 'Eureka', '3.0'
 end
