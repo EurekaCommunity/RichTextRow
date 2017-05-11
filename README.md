@@ -1,3 +1,9 @@
+<p align="left">
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible" /></a>
+<a href="https://cocoapods.org/pods/RichTextRow"><img src="https://img.shields.io/cocoapods/v/RichTextRow.svg" alt="CocoaPods compatible" /></a>
+<a href="https://raw.githubusercontent.com/EurekaCommunity/RichTextRow/master/LICENSE"><img src="http://img.shields.io/badge/license-MIT-blue.svg?style=flat" alt="License: MIT" /></a>
+</p>
+
 ## Introduction
 
 RichTextRow is a Eureka custom row that allows us to display and edit html. 
