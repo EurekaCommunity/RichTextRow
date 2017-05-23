@@ -13,6 +13,18 @@ public protocol RichTextEditorDelegate: class {
     func heightDidChange()
 }
 
+fileprivate class WeakScriptMessageHandler: NSObject, WKScriptMessageHandler {
+    weak var delegate: WKScriptMessageHandler?
+
+    init(delegate: WKScriptMessageHandler) {
+        self.delegate = delegate
+    }
+
+    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        self.delegate?.userContentController(userContentController, didReceive: message)
+    }
+}
+
 public class RichTextEditor: UIView, WKScriptMessageHandler, WKNavigationDelegate, UIScrollViewDelegate {
 
     private static let textDidChange = "textDidChange"
@@ -68,7 +80,7 @@ public class RichTextEditor: UIView, WKScriptMessageHandler, WKNavigationDelegat
         super.init(frame: frame)
 
         [RichTextEditor.textDidChange, RichTextEditor.heightDidChange].forEach {
-            configuration.userContentController.add(self, name: $0)
+            configuration.userContentController.add(WeakScriptMessageHandler(delegate: self), name: $0)
         }
 
         editorView.navigationDelegate = self
