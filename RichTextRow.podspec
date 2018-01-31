@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.source_files = 'Sources/**/*.{swift}'
   s.ios.resource_bundle = { 'Resources' => 'Sources/**/*.{html,js}' }
-  s.dependency 'Eureka', '3.0'
+  s.dependency 'Eureka', '4.0'
 end
