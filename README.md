@@ -35,8 +35,8 @@ class ViewController: FormViewController {
 ## Requirements
 
 * iOS 9.0+
-* Xcode 8.3.2+
-* Eureka 3.0
+* Xcode 9.0+
+* Eureka 4.0
 
 ## Installation
 
