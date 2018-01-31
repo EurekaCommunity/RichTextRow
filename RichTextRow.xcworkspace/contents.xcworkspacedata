@@ -5,9 +5,9 @@
       location = "group:Example.playground">
    </FileRef>
    <FileRef
-      location = "group:Carthage/Checkouts/Eureka/Eureka.xcodeproj">
+      location = "group:RichTextRow.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:RichTextRow.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
