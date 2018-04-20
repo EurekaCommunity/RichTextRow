@@ -25,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B67BDA462089FA770030ED0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B62500AA1EBA143F00F4D8D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B62500CF1EBA154A00F4D8D5;
+			remoteInfo = RichTextRow;
+		};
 		B6CF21271EBB5F0C00D66C72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B62500AA1EBA143F00F4D8D5 /* Project object */;
@@ -196,7 +203,6 @@
 				B62500CC1EBA154A00F4D8D5 /* Frameworks */,
 				B62500CD1EBA154A00F4D8D5 /* Headers */,
 				B62500CE1EBA154A00F4D8D5 /* Resources */,
-				C96E138A56408CE4BDB5496E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,11 +222,11 @@
 				B652AB271EBB657500BBEC43 /* Frameworks */,
 				B652AB281EBB657500BBEC43 /* Resources */,
 				08B5B2B9E59BBD43529326CD /* [CP] Embed Pods Frameworks */,
-				424CED00040605688AEE3DAE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B67BDA472089FA770030ED0B /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -236,7 +242,6 @@
 				B6CF211E1EBB5F0C00D66C72 /* Frameworks */,
 				B6CF211F1EBB5F0C00D66C72 /* Resources */,
 				E1B215562D04A4C078CDE00A /* [CP] Embed Pods Frameworks */,
-				D0FF7811AB616F86D744EA26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -358,21 +363,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		424CED00040605688AEE3DAE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6BB323FB4026FEF7D2E9893D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,36 +397,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C96E138A56408CE4BDB5496E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RichTextRow/Pods-RichTextRow-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D0FF7811AB616F86D744EA26 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RichTextRowTests/Pods-RichTextRowTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E1B215562D04A4C078CDE00A /* [CP] Embed Pods Frameworks */ = {
@@ -489,6 +449,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B67BDA472089FA770030ED0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B62500CF1EBA154A00F4D8D5 /* RichTextRow */;
+			targetProxy = B67BDA462089FA770030ED0B /* PBXContainerItemProxy */;
+		};
 		B6CF21281EBB5F0C00D66C72 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B62500CF1EBA154A00F4D8D5 /* RichTextRow */;
