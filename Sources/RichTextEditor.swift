@@ -95,21 +95,31 @@ public class RichTextEditor: UIView, WKScriptMessageHandler, WKNavigationDelegat
 
         addSubview(placeholderLabel)
         placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            placeholderLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            placeholderLabel.topAnchor.constraint(equalTo: topAnchor),
-            placeholderLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            placeholderLabel.bottomAnchor.constraint(equalTo: bottomAnchor)
-        ])
+
+        NSLayoutConstraint.activate(
+            [
+                (.leading, 16),
+                (.top, 0),
+                (.trailing, -16),
+                (.bottom, 0)
+            ].map({
+                .init(item: placeholderLabel, attribute: $0, relatedBy: .equal, toItem: self, attribute: $0, multiplier: 1, constant: $1)
+            })
+        )
 
         addSubview(editorView)
         editorView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            editorView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            editorView.topAnchor.constraint(equalTo: topAnchor, constant: 10),
-            editorView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
-            editorView.bottomAnchor.constraint(equalTo: bottomAnchor)
-        ])
+
+        NSLayoutConstraint.activate(
+            [
+                (.leading, 8),
+                (.top, 10),
+                (.trailing, -8),
+                (.bottom, 0)
+            ].map({
+                .init(item: editorView, attribute: $0, relatedBy: .equal, toItem: self, attribute: $0, multiplier: 1, constant: $1)
+            })
+        )
 
         editorView.loadHTMLString(html, baseURL: nil)
     }

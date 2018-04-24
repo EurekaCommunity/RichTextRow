@@ -37,12 +37,17 @@ public final class RichTextCell: Cell<String>, CellType, RichTextEditorDelegate 
         selectionStyle = .none
         contentView.addSubview(editor)
         editor.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            editor.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            editor.topAnchor.constraint(equalTo: contentView.topAnchor),
-            editor.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            editor.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
-        ])
+
+        NSLayoutConstraint.activate(
+            [
+                (.leading, 0),
+                (.top, 0),
+                (.trailing, 0),
+                (.bottom, 0)
+            ].map({
+                .init(item: editor, attribute: $0, relatedBy: .equal, toItem: contentView, attribute: $0, multiplier: 1, constant: $1)
+            })
+        )
     }
 
     public override func update() {

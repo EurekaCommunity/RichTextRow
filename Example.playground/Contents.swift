@@ -4,7 +4,6 @@ import PlaygroundSupport
 import Eureka
 import RichTextRow
 
-
 let lorem = "<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sullae consulatum? Poterat autem inpune; <i>ALIO MODO</i>. Duo Reges: constructio interrete. </p>" +
 
 "<p>Falli igitur possumus. An eiusdem modi? Perge porro; Nemo igitur esse beatus potest. Maximus dolor, inquit, brevis est. Sint modo partes vitae beatae. </p>" +
