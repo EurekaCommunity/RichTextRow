@@ -3,7 +3,6 @@
 //  Example
 //
 //  Created by Fabio Felici on 5/4/17.
-//  Copyright © 2017 HubSpot. All rights reserved.
 //
 
 import UIKit

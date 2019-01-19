@@ -3,14 +3,13 @@
 //  RichTextRow
 //
 //  Created by Fabio Felici on 5/3/17.
-//  Copyright © 2017 HubSpot. All rights reserved.
 //
 
 import Eureka
 
 public final class RichTextCell: Cell<String>, CellType, RichTextEditorDelegate {
 
-    required public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required public init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
