@@ -7,9 +7,9 @@ Pod::Spec.new do |s|
   s.author           = { 'Fabio Felici' => 'fab.felici@gmail.com' }
   s.source           = { git: 'https://github.com/EurekaCommunity/RichTextRow.git', tag: s.version.to_s }
   s.social_media_url = 'https://twitter.com/EurekaCommunity'
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.requires_arc = true
   s.ios.source_files = 'Sources/**/*.{swift}'
   s.ios.resource_bundle = { 'Resources' => 'Sources/**/*.{html,js}' }
-  s.dependency 'Eureka', '4.3.1'
+  s.dependency 'Eureka', '~> 5.2.1'
 end
