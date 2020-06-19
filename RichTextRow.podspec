@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RichTextRow'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'Eureka custom row that allows us to display and edit html.'
   s.homepage         = 'https://github.com/EurekaCommunity/RichTextRow'
   s.license          = { type: 'MIT', file: 'LICENSE' }
@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.ios.source_files = 'Sources/**/*.{swift}'
   s.ios.resource_bundle = { 'Resources' => 'Sources/**/*.{html,js}' }
   s.dependency 'Eureka', '~> 5.2.1'
+  s.swift_versions   = ['4.2']
 end
