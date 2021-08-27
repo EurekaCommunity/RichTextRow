@@ -116,7 +116,7 @@ public class RichTextEditor: UIView, WKScriptMessageHandler, WKNavigationDelegat
                 (.trailing, -8),
                 (.bottom, 0)
             ].map({
-                .init(item: editorView, attribute: $0, relatedBy: .equal, toItem: self, attribute: $0, multiplier: 1, constant: $1)
+                .init(item: editorView!, attribute: $0, relatedBy: .equal, toItem: self, attribute: $0, multiplier: 1, constant: $1)
             })
         )
 
